@@ -3,3 +3,4 @@ datanab.egg-info/
 dist/
 datanab/__pycache__/
 datanab/tests/
+*.DS_Store

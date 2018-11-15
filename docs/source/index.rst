@@ -11,11 +11,6 @@ Welcome to datanab's documentation!
 
    constants
 
-.. automodule:: datanab
-   :members:
-   :private-members:
-   :special-members:
-
 Indices and tables
 ==================
 

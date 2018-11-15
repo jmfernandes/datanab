@@ -8,7 +8,8 @@ Welcome to datanab's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+
+   constants
 
 .. automodule:: datanab
    :members:

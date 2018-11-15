@@ -21,6 +21,8 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('../../'))
 
+def setup(app):
+    app.add_stylesheet('style.css')
 
 # -- General configuration ------------------------------------------------
 
@@ -92,11 +94,21 @@ html_theme = 'alabaster'
 # documentation.
 #
 # html_theme_options = {}
+html_theme_options = {'page_width' : '1080px',
+                      'fixed_sidebar' : False,
+                      'touch_icon' : '_static.Dglove.ico'
+                        }
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_sidebars = {'**': ['blurb.html','button.html','globaltoc.html', 'searchbox.html']}
+
+#html_logo = '_static/pics/title.PNG'
+
+html_favicon = '_static/Dglove.ico'
 
 
 # -- Options for HTMLHelp output ------------------------------------------
@@ -104,6 +116,7 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'datanabdoc'
 
+add_module_names = False
 
 # -- Options for LaTeX output ---------------------------------------------
 

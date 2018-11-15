@@ -6,6 +6,9 @@ class dotdict(dict):
     def __repr__(self):
         return "{} {} \n ".format(self['value'],self['units'])
 
+    def __str__(self):
+        return "{} {} \n ".format(self['value'],self['units'])
+
 #Constants
 planck_constant = dotdict(r.get("http://constants.datanab.net/physics/planck_constant_json").json())
 """Planck's constant."""
